@@ -36,7 +36,7 @@ def main():
     # increases the width of the text and tables/figures
     _max_width_()
 
-    # hide the footer and optionally the streamlit menu in the topright corner which is unrelated to our app
+    # hide the footer 
     hide_header_footer()
     
       
@@ -45,7 +45,7 @@ def main():
     st.markdown("Check the basic quality of any dataset")
     st.markdown("---")
 
-    st.subheader(" [Read full tutorial at Medium.](https://medium.com/@maladeep.upadhaya) |  [Complete code at GitHub](https://github.com/maladeep)")
+    st.subheader(" [Read full tutorial at Medium](https://medium.com/@maladeep.upadhaya) |  [Complete code at GitHub](https://github.com/maladeep/data-quality-checker)")
     st.markdown("---")
     def file_select(folder='./datasets'):
         filelist=os.listdir(folder)
@@ -63,6 +63,8 @@ def main():
         if filename is not None:
             df=pd.read_csv(filename)
     st.markdown("---")
+    
+
     #show data
     if st.checkbox('Show  Dataset'):
         num=st.number_input('No. of Rows',5,10)
@@ -84,8 +86,8 @@ def main():
  
    
     
-    #chech for null values
-    if st.checkbox('NULL'):
+    #check for null values
+    if st.checkbox('Missing Values'):
         st.markdown("Missing values are known as null or NaN values. Missing data tends to **introduce bias that leads to misleading results.**")
 
         st.write("Number of rows:", len(df))
@@ -107,8 +109,8 @@ def main():
     st.markdown("---")   
 
 
-
-    if st.checkbox('Completeness'):
+    #check for completeness ratio 
+    if st.checkbox('Completeness Ratio'):
         st.markdown(" Completeness is defined as the ratio of non-missing values to total records in dataset.") 
         # st.write("Total data length:", len(df))
         nonmissing = (df.notnull().sum().round(2))
@@ -124,6 +126,7 @@ def main():
 
     st.markdown("---")
 
+    #check dupication rate
     if st.checkbox('Duplication Rate'):
         st.markdown(" Duplication rate is defined as the ratio of  number of duplicates to total records in dataset.") 
         
@@ -134,8 +137,8 @@ def main():
       
             
     st.markdown("---")
-     
-  
+
+    #check for normality test
     if st.checkbox('Normality'):
 
 
@@ -174,7 +177,7 @@ if __name__=='__main__':
 st.markdown(" >  🙏 Thank you for exploring basic dataset quality checker. Feedbacks are highly welcomed.")
 
 
-st.subheader(" [Read full tutorial at Medium](https://medium.com/@maladeep.upadhaya) |  [Complete code at GitHub](https://github.com/maladeep)")
+st.subheader(" [Read full tutorial at Medium](https://medium.com/@maladeep.upadhaya) |  [Complete code at GitHub](https://github.com/maladeep/data-quality-checker)")
 
 
 
