@@ -6,7 +6,7 @@ Check the basic quality of any dataset.
 <img src='images/screenshot.png' />
 
 ## [Read full tutorial at Medium.](https://medium.com/@maladeep.upadhaya)
-## [Interactive app](https://data-quality-checker.herokuapp.com/)
+## [Explore the app](https://data-quality-checker.herokuapp.com/)
 ## Requirements
 
 * python 3.7 version
