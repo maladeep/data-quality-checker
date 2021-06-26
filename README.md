@@ -3,7 +3,7 @@
 Check the basic quality of any dataset.
 
 
-<img src='images/screenshot.png' align="right" height="138.5" /></a>
+<img src='images/screenshot.png' /></a>
 
 ## [Read full tutorial at Medium.](https://medium.com/@maladeep.upadhaya)
 
