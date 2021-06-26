@@ -6,7 +6,7 @@ Check the basic quality of any dataset.
 <img src='images/screenshot.png' />
 
 ## [Read full tutorial at Medium.](https://medium.com/@maladeep.upadhaya)
-
+## [Explore the app](https://data-quality-checker.herokuapp.com/)
 ## Requirements
 
 * python 3.7 version
@@ -24,7 +24,7 @@ Check the basic quality of any dataset.
 
  OR
  
- > Simply run the web app https://explore-palmer-penguins.herokuapp.com
+ > Simply run the web app https://data-quality-checker.herokuapp.com/
 
 
   **Any feedbacks and suggestions are highly appreacited.**
