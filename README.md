@@ -2,7 +2,7 @@
 
 Check the basic quality of any dataset.
 
-
+## Sneak Peek
 <img src='images/screenshot.png' />
 
 ## [Read full tutorial at Medium.](https://medium.com/@maladeep.upadhaya)
